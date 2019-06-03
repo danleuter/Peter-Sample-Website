@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PETER MCKINNON - dashboard</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/jodit.min.css">
+    <script>
+        alert("This is not an official Website of Peter Mckinnon.");
+        alert('Peter Mckinnon will not held liable for anything in here!')
+    </script>
+    
+    
+</head>
+<body>
+
+    <nav class="menu-web">
+        <div class="menu-container">
+            <div class="brand-name" >
+                <p class="logo"><a href="#">Peter Mckinnon</a></p>
+            </div>
+            <div class="navbar-menu">
+                    <div class="search-bar"><input type="search" name="" id="article-search" placeholder="Search"></div>
+                <ul>
+                    <!-- <li><input type="search" name="" id="article-search" placeholder="Search"></li> -->
+                    <a class="menu-btn initialism" href="dashboard/create.html">Create <i class="fas fa-pencil-alt"></i></a>
+                    <a class="menu-btn initialism disabled" href="#"> Dan <i  class="profile fas fa-user-circle"></i></a>
+                    <a class="menu-btn initialism disabled" href="#"> logout <i class="fas fa-user-alt-slash"></i></a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <form class="create-article" method="post" action="<?php $_SERVER['PHP_SELF']; ?>" enctype="multipart/form-data">
+        <div class="article-editor text bg-primary mb-3">
+            <!-- <div class="card-header">What's going on?</div> -->
+            <div class="card-body">
+                <h6 class="card-title"><label>Title</label>
+                <input type="text" class="form-control" name="art_title" placeholder="Title"/></h6>
+                <h6 class="card-title"><label>Description</label>
+                <input type="text" class="form-control" name="art_desc" placeholder="Short Description"/></h6>
+                <h6 class="card-title"><label>Author</label>
+                <input type="text" class="form-control" name="art_author" placeholder="Peter Mckinnon"/></h6>
+                <h6 class="card-title"><label>Category</label>
+                <input type="text" class="form-control" name="art_category" placeholder="Category"/></h6>
+
+                <!-- dito bugs -->
+                <h6 class="card-title"><label>Upload Thumbnail</label>
+                <div class="input-group-append"><input class="input-group-text" type="file" name="art_image">
+                </div></h6>
+
+                <!-- dito bugs -->
+                <hr class="my-4">
+                <h6 class="card-title"><label>Content</label></h6>
+                <textarea class="text-primary" id="editor" name="art_content" placeholder="Some quick example text to build on the card title and make up the bulk of the card's content."></textarea>
+                <hr class="my-4">
+                <input type="submit" name="submit1" value="Publish Now" class="btn btn-outline-success"/>
+                <input type="submit" name="submit2" value="Save to Draft" class="btn btn-outline-info"/>
+                <button type="button" class="btn btn-outline-danger">Cancel</button>
+            </div>
+        </div>
+    </form>
+    
+
+    <footer>
+        <div class="menu-container footer-container d-flex d-flex justify-content-beetween">
+            <div class="footer-brand-name" >
+                <p id='footer' class="text-white text-uppercase ">Peter Mckinnon</p>
+            </div>
+            <div class="social-media d-flex justify-content-between align-content-center mr-3 my-auto mb-auto">
+                <a class=' text-white mr-5' href="#"><i class="fab fa-facebook"></i></a>
+                <a class=' text-white mr-5' href="#"><i class="fab fa-youtube"></i></a>
+                <a class=' text-white mr-5' href="#"><i class="fab fa-twitter"></i></a>
+                <a class=' text-white mr-5' href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/jodit.min.js"></script>
+    <script>
+
+            var editor = new Jodit('#editor');
+            editor.value = '';
+            
+    </script>
+
+    
+</body>
+</html>

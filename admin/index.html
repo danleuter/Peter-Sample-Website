@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PETER MCKINNON - dashboard</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/jodit.min.css">
+    
+    
+</head>
+<body>
+
+    <nav class="menu-web">
+        <div class="menu-container">
+            <div class="brand-name" >
+                <p class="logo"><a href="#">Peter Mckinnon</a></p>
+            </div>
+            <div class="navbar-menu">
+                    <div class="search-bar"><input type="search" name="" id="article-search" placeholder="Search"></div>
+                <ul>
+                    <!-- <li><input type="search" name="" id="article-search" placeholder="Search"></li> -->
+                    <a class="menu-btn initialism" href="dashboard/create.html">Create <i class="fas fa-pencil-alt"></i></a>
+                    <a class="menu-btn initialism disabled" href="#"> Dan <i  class="profile fas fa-user-circle"></i></a>
+                    <a class="menu-btn initialism disabled" href="#"> logout <i class="fas fa-user-alt-slash"></i></a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="sidebar">
+        <div class="list-group">
+                <a href="#published" class="list-group-item list-group-item-action active"> Published Articles
+                </a>
+                <a href="#drafts" class="list-group-item list-group-item-action"> Draft Articles
+                </a>
+                <a href="#pool" class="list-group-item list-group-item-action"> Pool of Ideas
+                </a>
+                <a href="#" class="list-group-item list-group-item-action"> Profile
+                </a>
+                <a href="#" class="list-group-item list-group-item-action disabled"> Messages
+                </a>
+        </div>
+    </div> 
+
+
+    <!-- Published Posts -->
+<main>
+    <article id="published" class="published-articles to-hide">   
+            <div class="articles">
+                <div><h1 id="Page-title"> PUBLISHED POSTS</h1></div>
+                                <div class="card-box">
+                        <div class="cards border-success mb-3 d-flex">
+                            <img class="article-thumbnail" style="object-fit: cover; height: 180px;" src="images/bucketshot.jpg">
+                            <div class="card-content">
+                                <div class="card-header d-flex justify-content-between">
+                                <div class=" author">Authored by: <h4>Peter Mckinnon</h4><small class="badge outline-primary">on 2019-05-21 11:27:04</small>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <div class="btn btn-sm btn-info"><a href="http://localhost/Peter-Mckinnon/admin/dashboard/update.php?art_id=18">Edit</a></div>
+                                        <form class="buttons" method="POST" action="/Peter-Mckinnon/admin/inc/published.php">
+                                            <input type="hidden" name="delete_id" value="18">
+                                            <input type="submit" name="delete" value="Delete" class="btn btn-sm btn-danger">
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="article-content">
+                                    <div class="card-body">
+                                        <h6 class="card-title">THE BUCKET SHOT</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                <div class="card-box">
+                        <div class="cards border-success mb-3 d-flex">
+                            <img class="article-thumbnail" style="object-fit: cover; height: 180px;" src="images/peter3.jpg">
+                            <div class="card-content">
+                                <div class="card-header d-flex justify-content-between">
+                                <div class=" author">Authored by: <h4>Peter Mckinnon</h4><small class="badge outline-primary">on 2019-05-20 16:44:34</small>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <div class="btn btn-sm btn-info"><a href="http://localhost/Peter-Mckinnon/admin/dashboard/update.php?art_id=15">Edit</a></div>
+                                        <form class="buttons" method="POST" action="/Peter-Mckinnon/admin/inc/published.php">
+                                            <input type="hidden" name="delete_id" value="15">
+                                            <input type="submit" name="delete" value="Delete" class="btn btn-sm btn-danger">
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="article-content">
+                                    <div class="card-body">
+                                        <h6 class="card-title">How Peter McKinnon Edits His Photos</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                <div class="card-box">
+                        <div class="cards border-success mb-3 d-flex">
+                            <img class="article-thumbnail" style="object-fit: cover; height: 180px;" src="images/peter9.jpg">
+                            <div class="card-content">
+                                <div class="card-header d-flex justify-content-between">
+                                <div class=" author">Authored by: <h4>Woodrow Walden</h4><small class="badge outline-primary">on 2019-05-20 11:05:54</small>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <div class="btn btn-sm btn-info"><a href="http://localhost/Peter-Mckinnon/admin/dashboard/update.php?art_id=12">Edit</a></div>
+                                        <form class="buttons" method="POST" action="/Peter-Mckinnon/admin/inc/published.php">
+                                            <input type="hidden" name="delete_id" value="12">
+                                            <input type="submit" name="delete" value="Delete" class="btn btn-sm btn-danger">
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="article-content">
+                                    <div class="card-body">
+                                        <h6 class="card-title">From Start to Finish – Peter McKinnon’s Video Production Workflow</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                <div class="card-box">
+                        <div class="cards border-success mb-3 d-flex">
+                            <img class="article-thumbnail" style="object-fit: cover; height: 180px;" src="images/peter2.png">
+                            <div class="card-content">
+                                <div class="card-header d-flex justify-content-between">
+                                <div class=" author">Authored by: <h4>Sean McCormack</h4><small class="badge outline-primary">on 2019-05-20 10:56:14</small>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <div class="btn btn-sm btn-info"><a href="http://localhost/Peter-Mckinnon/admin/dashboard/update.php?art_id=10">Edit</a></div>
+                                        <form class="buttons" method="POST" action="/Peter-Mckinnon/admin/inc/published.php">
+                                            <input type="hidden" name="delete_id" value="10">
+                                            <input type="submit" name="delete" value="Delete" class="btn btn-sm btn-danger">
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="article-content">
+                                    <div class="card-body">
+                                        <h6 class="card-title">Insta Stories In Photoshop Ala Peter McKinnon Class New Tutorial</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                <div class="card-box">
+                        <div class="cards border-success mb-3 d-flex">
+                            <img class="article-thumbnail" style="object-fit: cover; height: 180px;" src="images/peter5.jpg">
+                            <div class="card-content">
+                                <div class="card-header d-flex justify-content-between">
+                                <div class=" author">Authored by: <h4>Mathieu Stern</h4><small class="badge outline-primary">on 2019-05-20 10:11:19</small>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <div class="btn btn-sm btn-info"><a href="http://localhost/Peter-Mckinnon/admin/dashboard/update.php?art_id=16">Edit</a></div>
+                                        <form class="buttons" method="POST" action="/Peter-Mckinnon/admin/inc/published.php">
+                                            <input type="hidden" name="delete_id" value="16">
+                                            <input type="submit" name="delete" value="Delete" class="btn btn-sm btn-danger">
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="article-content">
+                                    <div class="card-body">
+                                        <h6 class="card-title">How to Create a Stunning Bokeh Explosion at Night</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                <div class="card-box">
+                        <div class="cards border-success mb-3 d-flex">
+                            <img class="article-thumbnail" style="object-fit: cover; height: 180px;" src="images/peter10.jpg">
+                            <div class="card-content">
+                                <div class="card-header d-flex justify-content-between">
+                                <div class=" author">Authored by: <h4>Peter Mckinnon</h4><small class="badge outline-primary">on 2019-05-20 10:02:11</small>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <div class="btn btn-sm btn-info"><a href="http://localhost/Peter-Mckinnon/admin/dashboard/update.php?art_id=6">Edit</a></div>
+                                        <form class="buttons" method="POST" action="/Peter-Mckinnon/admin/inc/published.php">
+                                            <input type="hidden" name="delete_id" value="6">
+                                            <input type="submit" name="delete" value="Delete" class="btn btn-sm btn-danger">
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="article-content">
+                                    <div class="card-body">
+                                        <h6 class="card-title">STREET PHOTOGRAPHY</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                <div class="card-box">
+                        <div class="cards border-success mb-3 d-flex">
+                            <img class="article-thumbnail" style="object-fit: cover; height: 180px;" src="images/peter7.jpg">
+                            <div class="card-content">
+                                <div class="card-header d-flex justify-content-between">
+                                <div class=" author">Authored by: <h4>Peter Mckinnon</h4><small class="badge outline-primary">on 2019-05-20 09:57:50</small>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <div class="btn btn-sm btn-info"><a href="http://localhost/Peter-Mckinnon/admin/dashboard/update.php?art_id=5">Edit</a></div>
+                                        <form class="buttons" method="POST" action="/Peter-Mckinnon/admin/inc/published.php">
+                                            <input type="hidden" name="delete_id" value="5">
+                                            <input type="submit" name="delete" value="Delete" class="btn btn-sm btn-danger">
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="article-content">
+                                    <div class="card-body">
+                                        <h6 class="card-title">3 camera tricks NO ONE will suspect!</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                <div class="card-box">
+                        <div class="cards border-success mb-3 d-flex">
+                            <img class="article-thumbnail" style="object-fit: cover; height: 180px;" src="images/peter1.jpg">
+                            <div class="card-content">
+                                <div class="card-header d-flex justify-content-between">
+                                <div class=" author">Authored by: <h4>Sarah Rexford</h4><small class="badge outline-primary">on 2019-05-20 09:52:57</small>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <div class="btn btn-sm btn-info"><a href="http://localhost/Peter-Mckinnon/admin/dashboard/update.php?art_id=4">Edit</a></div>
+                                        <form class="buttons" method="POST" action="/Peter-Mckinnon/admin/inc/published.php">
+                                            <input type="hidden" name="delete_id" value="4">
+                                            <input type="submit" name="delete" value="Delete" class="btn btn-sm btn-danger">
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="article-content">
+                                    <div class="card-body">
+                                        <h6 class="card-title">The Work Behind His Fame | Peter McKinnon</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </article>
+
+        <!-- Draft Posts -->
+
+        <article id="drafts" class="published-articles to-hide d-none">   
+            <div class="articles">
+            <div><h1 id="Page-title"> DRAFT POSTS</h1></div>
+                                <div class="card-box">
+                        <div class="cards border-danger mb-3 d-flex">
+                            <img class="article-thumbnail" style="object-fit: cover; height: 180px;" src="images/peter3.jpg">
+                            <div class="card-content">
+                                <div class="card-header d-flex justify-content-between">
+                                    <div class=" author">Authored by: <h4>Peter Mckinnon</h4><small class="badge outline-primary">on 2019-05-20 16:44:34</small>
+                                    </div>
+                                        <div class="d-flex flex-column">
+                                            <div class="btn btn-sm btn-info align-items"><a href="http://localhost/Peter-Mckinnon/admin/dashboard/update.php?art_id=15">Edit</a></div>
+                                            <form class="buttons d-flex" method="POST" action="/Peter-Mckinnon/admin/inc/draft_post_dashboard.php">
+                                                <input type="hidden" name="delete_id" value="15">
+                                                <input type="submit" name="delete" value="Delete" class="btn btn-sm btn-danger">
+                                            </form>
+                                        </div>
+                                    </div>
+                                <div class="article-content">
+                                    <div class="card-body">
+                                        <h6 class="card-title">How Peter McKinnon Edits His Photos</h6>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                <div class="card-box">
+                        <div class="cards border-danger mb-3 d-flex">
+                            <img class="article-thumbnail" style="object-fit: cover; height: 180px;" src="images/peter9.jpg">
+                            <div class="card-content">
+                                <div class="card-header d-flex justify-content-between">
+                                    <div class=" author">Authored by: <h4>Woodrow Walden</h4><small class="badge outline-primary">on 2019-05-20 11:05:54</small>
+                                    </div>
+                                        <div class="d-flex flex-column">
+                                            <div class="btn btn-sm btn-info align-items"><a href="http://localhost/Peter-Mckinnon/admin/dashboard/update.php?art_id=12">Edit</a></div>
+                                            <form class="buttons d-flex" method="POST" action="/Peter-Mckinnon/admin/inc/draft_post_dashboard.php">
+                                                <input type="hidden" name="delete_id" value="12">
+                                                <input type="submit" name="delete" value="Delete" class="btn btn-sm btn-danger">
+                                            </form>
+                                        </div>
+                                    </div>
+                                <div class="article-content">
+                                    <div class="card-body">
+                                        <h6 class="card-title">From Start to Finish – Peter McKinnon’s Video Production Workflow</h6>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                <div class="card-box">
+                        <div class="cards border-danger mb-3 d-flex">
+                            <img class="article-thumbnail" style="object-fit: cover; height: 180px;" src="images/peter6.jpg">
+                            <div class="card-content">
+                                <div class="card-header d-flex justify-content-between">
+                                    <div class=" author">Authored by: <h4>Mathieu Stern</h4><small class="badge outline-primary">on 2019-05-20 10:11:19</small>
+                                    </div>
+                                        <div class="d-flex flex-column">
+                                            <div class="btn btn-sm btn-info align-items"><a href="http://localhost/Peter-Mckinnon/admin/dashboard/update.php?art_id=8">Edit</a></div>
+                                            <form class="buttons d-flex" method="POST" action="/Peter-Mckinnon/admin/inc/draft_post_dashboard.php">
+                                                <input type="hidden" name="delete_id" value="8">
+                                                <input type="submit" name="delete" value="Delete" class="btn btn-sm btn-danger">
+                                            </form>
+                                        </div>
+                                    </div>
+                                <div class="article-content">
+                                    <div class="card-body">
+                                        <h6 class="card-title">How to Create a Stunning Bokeh Explosion at Night</h6>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        </div>
+        </article>
+
+        <article id="pool" class="published-articles to-hide d-none">   
+                
+        <div class="pool-of-ideas ">
+                <div><h1 id="Page-title"> POOL OF IDEAS</h1></div>
+            <div class="d-flex flex-wrap">
+                <div class="card-warp">
+                    <div class="card card-ideas text-white bg-primary mb-3" style="max-width: 20rem;">
+                        <div class="card-header">Header
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title">Primary card title</h6>
+                            <p class="card-text text-white">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-warp">
+                    <div class="card card-ideas text-white bg-primary mb-3" style="max-width: 20rem;">
+                        <div class="card-header">Header
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title">Primary card title</h6>
+                            <p class="card-text text-white">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-warp">
+                    <div class="card card-ideas text-white bg-primary mb-3" style="max-width: 20rem;">
+                        <div class="card-header">Header
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title">Primary card title</h6>
+                            <p class="card-text text-white">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-warp">
+                    <div class="card card-ideas text-white bg-primary mb-3" style="max-width: 20rem;">
+                        <div class="card-header">Header
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title">Primary card title</h6>
+                            <p class="card-text text-white">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
+    </article>
+
+    <div id="profile" class="published-articles to-hide d-none articles">
+            <div><h1 id="Page-title"> PROFILE</h1></div>
+            <div class="card">
+                <div class="card-header">
+                    <img src="images/profile.jpeg" alt="Profile Image" class="profile-img">
+                </div>
+                <div class="card-body">
+                    <p class="full-name">Dan Carandang</p>
+                    <p class="username">@daniel</p>
+                    <p class="city">dan@test.com</p>
+                    <p class="desc">Traveler. Artist. Coffee Lover.</p>
+                    <p>
+                        <a href="#" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon tumblr"><i class="fab fa-tumblr"></i></a>
+                        <a href="#" class="social-icon youtube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-icon linkedin"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon google-plus"><i class="fab fa-google-plus"></i></a>
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <div class="col vr">
+                        <p><span class="count">1.8K</span> Followers</p>
+                    </div>
+                    <div class="col">
+                        <p><span class="count">2.0K</span> Following</p>
+                    </div>
+                    
+                </div>
+            </div>
+            </div>
+
+    </main>
+
+
+    <footer>
+        <div class="menu-container footer-container d-flex d-flex justify-content-beetween">
+            <div class="footer-brand-name" >
+                <p id='footer' class="text-white text-uppercase ">Peter Mckinnon</p>
+            </div>
+            <div class="social-media d-flex justify-content-between align-content-center mr-3 my-auto mb-auto">
+                <a class=' text-white mr-5' href="#"><i class="fab fa-facebook"></i></a>
+                <a class=' text-white mr-5' href="#"><i class="fab fa-youtube"></i></a>
+                <a class=' text-white mr-5' href="#"><i class="fab fa-twitter"></i></a>
+                <a class=' text-white mr-5' href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/popper.min.js" type="text/javascript"></script>
+    <script src=" js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/jodit.min.js"></script>
+
+    <script>
+      $(document).on('click', '.list-group .list-group-item', function(){
+        $(this).addClass('active').siblings().removeClass('active');
+        $('.to-hide').removeClass("d-none");
+            var p = $('.active').text();
+            x = p.substring(1, 4);
+            
+            switch(x) {
+                case 'Pub':
+                    $('#published').siblings().addClass("d-none");
+                    break;
+                case 'Dra':
+                    $('#drafts').siblings().addClass("d-none");
+                    break;
+                case 'Poo':
+                    $('#pool').siblings().addClass("d-none");	
+                    break;
+                case 'Pro':
+                    $('#profile').siblings().addClass("d-none");
+                    break;
+                // case 'MES':
+                //     $('#messages').siblings().addClass("d-none");
+                //     break;
+                default:
+            }
+        
+      });
+      
+    </script>
+
+    </body>
+    </html>
