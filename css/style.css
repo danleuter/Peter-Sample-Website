@@ -16,7 +16,7 @@ body {
     position: fixed;
     top: 0;
     display: flex;
-    width: 100%;
+    width: 100vw;
     height: 50px;
     background-color: rgba(255, 255, 255, 0.8);
     z-index: 1;
@@ -349,6 +349,11 @@ i .fas {
   margin-top: 100px;
 }
 
+.featured-card{
+  position: relative;
+  width: 23%;
+}
+
 .published-articles, .draft-articles, .pool-of-ideas {
   margin-top: 100px;
 
@@ -675,7 +680,7 @@ i .fas {
 
 .contact {
   margin: auto;
-  /* max-width: 992px; */
+  width: 100vw;
   padding: 0px;
 }
 
@@ -684,6 +689,7 @@ i .fas {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
   height: 100%;
   justify-content: start;
 }
@@ -748,6 +754,14 @@ p#footer.text-white.text-uppercase {
   margin-left: 40px;
 }
 
+a.btn {
+  padding: 0.5rem 2rem;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
 
 
 
@@ -762,6 +776,10 @@ p#footer.text-white.text-uppercase {
 @media screen and (max-width:872px){
     .navbar-menu{display: none !important}
     .search-bar #article-search{display: none !important}
+    #featured{flex-direction: column !important; flex-wrap: nowrap;}
+    .featured-card{width: 100%}
+    .featured-card{}
+    /* #featured div div.border-0 {height:"23%" !important} */
     /* .showcase-picture img {
       display: block;
       width: 100%;
@@ -786,6 +804,9 @@ p#footer.text-white.text-uppercase {
 
 @media(min-width:872px){
   .menu-wrap-hamburger{display: none !important}
+  #featured-card{ width: 23% !important}
+  
+  
 }
 
 @media screen and (max-width: 575px) {
@@ -860,7 +881,7 @@ p#footer.text-white.text-uppercase {
 
     .article-thumbnail {
       /*width: 100px !important ;*/
-      height: 50% !important ;
+      height: 280px !important ;
       object-fit:   cover;
     }
 
