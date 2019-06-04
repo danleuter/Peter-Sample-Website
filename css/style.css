@@ -754,7 +754,7 @@ p#footer.text-white.text-uppercase {
   margin-left: 40px;
 }
 
-a.btn {
+a#BtnPopOver {
   padding: 0.5rem 2rem;
   position: relative;
   top: 50%;
